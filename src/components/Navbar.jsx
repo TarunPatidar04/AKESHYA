@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="flex justify-between px-6 lg:px-28 py-5 items-center">
         <div className="flex items-center">
           <img src={Logo} alt="Company Logo" className="w-16" />
-          <span className="ml-2 mt-3 text-3xl text-customBlue font-bold">
+          <span className="ml-2 mt-0 text-3xl text-customBlue font-bold">
             AKESHYA
           </span>
         </div>
