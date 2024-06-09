@@ -12,7 +12,6 @@ import Navbar from "./Navbar";
 const Main = () => {
   return (
     <>
-      <Navbar />
       <div className="px-4 md:px-28 mt-32">
         <div className="flex justify-between items-center">
           <div>
