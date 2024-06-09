@@ -1,6 +1,6 @@
 .card {
-  height: 550px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .card .heading {
@@ -10,7 +10,7 @@
 
 
 .card p {
-  line-height: 25px;
+  line-height: 30px;
   padding-top: 10px;
 }
 
@@ -41,7 +41,7 @@
   max-width: 262px;
   background-color: white;
   border-radius: 4px;
-  padding: 62px;
+  padding: 2px;
   margin: 12px;
   text-decoration: none;
   z-index: 0;
