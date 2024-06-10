@@ -5,7 +5,7 @@ const Card = ({ heading, description, image }) => {
   return (
     <div className="card">
       <a className="card1">
-        <img src={image} alt="" className="w-14" />
+        <img src={image} alt="" className="w-9" />
         <p className="heading">{heading}</p>
         <p className="small">{description}</p>
         <div className="go-corner" href="#"></div>
