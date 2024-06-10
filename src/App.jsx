@@ -5,6 +5,7 @@ import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
 import OurProcess from "./components/OurProcess";
 import CoreFeature from "./components/CoreFeature";
+import ContactUs from "./components/ContactUs";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Services />
       <OurProcess/>
       <CoreFeature/>
+      <ContactUs/>
     </>
   );
 };
