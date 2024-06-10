@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import OurProcess from "./components/OurProcess";
 import CoreFeature from "./components/CoreFeature";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <OurProcess/>
       <CoreFeature/>
       <ContactUs/>
+      <Footer/>
     </>
   );
 };
