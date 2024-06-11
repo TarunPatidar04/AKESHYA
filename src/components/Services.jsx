@@ -4,6 +4,7 @@ import script from "../Icons/script.png";
 import world from "../Icons/world.png";
 import speed from "../Icons/speed.png";
 import Card from "../cardComponent/Card";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const cardData = [
@@ -36,24 +37,52 @@ const Services = () => {
   return (
     <div className="py-10 max-w-7xl mx-auto">
       <div className="px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-black mb-6">
-          <span className="text-customBlue">&#8212;</span> SERVICES{" "}
-          <span className="text-customBlue">&#8212;</span>
-        </h2>
-        <p className="text-center text-gray-600 mb-8">
-          Akeshya will serve as your consultant and development partner to help
-          you turn your idea into a reality.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 1.5, delay: 0.2 }}
+        >
+          <h2 className="text-3xl font-bold text-center text-black mb-3">
+            <span className="text-customBlue">&#8212;</span> SERVICES{" "}
+            <span className="text-customBlue">&#8212;</span>
+          </h2>
+          <p className="text-center text-gray-600 mb-8">
+            Akeshya will serve as your consultant and development partner to
+            help you turn your idea into a reality.
+          </p>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={{
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                staggerChildren: 0.3,
+              },
+            },
+            hidden: { opacity: 0, y: 100 },
+          }}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
+        >
           {cardData.map((data, index) => (
-            <Card
+            <motion.div
               key={index}
-              heading={data.heading}
-              description={data.description}
-              image={data.image}
-            />
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 100 },
+              }}
+              transition={{ duration: 0.9 }}
+            >
+              <Card
+                heading={data.heading}
+                description={data.description}
+                image={data.image}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

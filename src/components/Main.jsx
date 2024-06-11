@@ -7,7 +7,6 @@ import client3 from "../assets/client3.png";
 import client4 from "../assets/client4.png";
 import client5 from "../assets/client5.png";
 import client6 from "../assets/client6.png";
-import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 
 const Main = () => {
