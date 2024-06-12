@@ -8,7 +8,7 @@ import play from "../TechIcons/play.png";
 import contact from "../TechIcons/contact.png";
 import search from "../TechIcons/search.png";
 import video from "../TechIcons/video.png";
-import bullish from "../TechIcons/bullish.png";
+import brand from "../TechIcons/brand.png";
 import calendar from "../TechIcons/calendar.png";
 import location from "../TechIcons/location.png";
 
@@ -36,15 +36,15 @@ const CoreFeature = () => {
     },
     {
       name: "Brand strategy",
-      image: bullish,
+      image: brand,
     },
     {
       name: "Local search marketing",
-      image: calendar,
+      image: location,
     },
     {
       name: "Lead Tracking & Management",
-      image: location,
+      image: calendar,
     },
     {
       name: "Contact management",
@@ -78,10 +78,10 @@ const CoreFeature = () => {
           </h2>
           <p className="text-center text-gray-600 mb-6">
             Akeshya is a forward-thinking and intelligent design firm that is
-            technically and creatively capable of transforming your brand into its
-            best digital self. Our approach to design and development results in
-            compelling, engaging branding and immersive digital experiences that
-            provide a value for money.
+            technically and creatively capable of transforming your brand into
+            its best digital self. Our approach to design and development
+            results in compelling, engaging branding and immersive digital
+            experiences that provide a value for money.
           </p>
         </motion.div>
         <motion.div
@@ -92,7 +92,7 @@ const CoreFeature = () => {
               opacity: 1,
               y: 0,
               transition: {
-               duration: 1.5,
+                duration: 1.5,
                 delay: 0.8,
               },
             },
