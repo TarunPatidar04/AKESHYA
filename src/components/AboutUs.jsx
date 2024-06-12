@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "remixicon/fonts/remixicon.css";
 import count from "../assets/count.svg";
-import smile from "../Icons/smile.png";
+import smile from "../Icons/smiley.png";
 import clock from "../Icons/clock.png";
 import world from "../Icons/world.png";
 import diary from "../Icons/diary.png";

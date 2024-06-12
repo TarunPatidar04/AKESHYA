@@ -1,7 +1,7 @@
 import React from "react";
 import earth from "../Icons/earth.png";
 import script from "../Icons/script.png";
-import world from "../Icons/world.png";
+import world from "../Icons/world1.png";
 import speed from "../Icons/speed.png";
 import Card from "../cardComponent/Card";
 import { motion } from "framer-motion";
